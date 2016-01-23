@@ -1,2 +1,2 @@
 # Template Server
-## This is a template server.
+## This is a template server
