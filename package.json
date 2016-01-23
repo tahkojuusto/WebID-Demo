@@ -1,0 +1,24 @@
+{
+  "name": "TemplateServer",
+  "version": "0.0.0",
+  "description": "This is a template server.",
+  "main": "index.js",
+  "scripts": {
+    "run": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julius Eerola",
+  "license": "BSD-2-Clause",
+  "private": true,
+  "dependencies": {
+    "express": "~4.13.3",
+    "jade": "~1.11.0",
+    "unirest": "~0.4.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-sass": "~1.1.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-jshint": "~0.12.0"
+  }
+}
