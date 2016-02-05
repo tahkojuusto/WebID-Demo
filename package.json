@@ -1,7 +1,7 @@
 {
-  "name": "TemplateServer",
-  "version": "0.0.0",
-  "description": "This is a template server.",
+  "name": "WebIDDemo",
+  "version": "0.0.1",
+  "description": "Tests WebID authentication.",
   "main": "index.js",
   "scripts": {
     "run": "node app.js",
