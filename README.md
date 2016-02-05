@@ -1,2 +1,2 @@
-# Template Server
-## This is a template server
+# WebId Demo
+## This is a WebId Demo
