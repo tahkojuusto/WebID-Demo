@@ -1,5 +1,11 @@
 module.exports = function(grunt) {
   grunt.initConfig ({
+    browserify: {
+      js: {
+        src: 'src/js/*.js',
+        dest: 'public/js/bundle.js'
+      },
+    },
     jshint: {
       files: '*.js'
     },
@@ -16,7 +22,7 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          'public/stylesheets/style.css' : 'sass/style.scss'
+          'public/css/style.css' : 'src/sass/style.scss'
         }
       }
     },
@@ -25,7 +31,7 @@ module.exports = function(grunt) {
         livereload: true
       },
       css: {
-        files: ['sass/**/*.scss'],
+        files: ['src/sass/**/*.scss'],
         tasks: ['sass'],
       },
       jade: {
@@ -43,5 +49,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.registerTask('default', ['jshint', 'sass', 'watch']);
+  grunt.loadNpmTasks('grunt-browserify');
+  grunt.registerTask('default', ['browserify', 'jshint', 'sass', 'watch']);
 };

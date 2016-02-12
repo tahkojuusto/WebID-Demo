@@ -3,5 +3,22 @@ html(lang="en")
   head
     title WebID Demo
   body
-    h1 This a WebID Demo Homepage.
+    div.jumbotron
+      h1 WebID Demo
+      p This is a test web application for WebID authentication and authorization.
+    
+    div.panel.panel-default
+      div.panel-heading Subject Name
+      div.panel-body #{subjectName}
+    
+    div.panel.panel-default
+      div.panel-heading Certificate Public Key
+      div.panel-body #{peerKey}
+    
+    div.panel.panel-default
+      div.panel-heading WebID Public Key
+      div.panel-body #{remoteKey}
+    
+  link(rel="stylesheet", type="text/css", href="css/style.css")
+  script(src="js/bundle.js")
   script(src="http://localhost:35729/livereload.js")
