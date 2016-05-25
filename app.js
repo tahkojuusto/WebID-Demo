@@ -95,7 +95,7 @@ var httpServer = http.createServer(app);
 
 var privateKey = fs.readFileSync('cert/server.key', 'utf8');
 var certificate = fs.readFileSync('cert/server.crt', 'utf8');
-var passphrase = 'pellava2';
+var passphrase = '';
 var credentials = {key: privateKey, cert: certificate, passphrase: passphrase,
                    requestCert: true};
 
